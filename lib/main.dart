@@ -52,24 +52,26 @@ class _HomePageState extends State<HomePage> {
               width: size.width,
               color: bgLightWhite,
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     RichText(
                       text: TextSpan(
-                        text: 'Find Your\n',
+                        text: '\tFind Your',
                         style: TextStyle(
                           color: textBlack,
                           fontFamily: 'RobotoMono',
                           fontWeight: FontWeight.w600,
-                          fontSize: 25,
+                          fontSize: 30,
+                          fontStyle: FontStyle.italic,
                         ),
                         children: [
                           TextSpan(
-                            text: '\tInspiration',
+                            text: ' Passion',
                             style: TextStyle(
-                              fontSize: 40,
+                              fontSize: 35,
                               fontFamily: 'RobotoMono',
                               fontWeight: FontWeight.bold,
                               fontStyle: FontStyle.italic,
@@ -78,6 +80,7 @@ class _HomePageState extends State<HomePage> {
                         ],
                       ),
                     ),
+                    SizedBox(height: 5),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -120,16 +123,16 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Container(
-                    child: Text(
-                      "Promo Today",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
+                  // Container(
+                  //   child: Text(
+                  //     "Promotion",
+                  //     style: TextStyle(
+                  //       fontSize: 20,
+                  //       fontFamily: 'Poppins',
+                  //       fontWeight: FontWeight.bold,
+                  //     ),
+                  //   ),
+                  // ),
                   SizedBox(height: 10),
                   Container(
                     height: 200,
@@ -139,7 +142,7 @@ class _HomePageState extends State<HomePage> {
                   Padding(
                     padding: EdgeInsets.only(left: 10, right: 10, bottom: 10),
                     child: Container(
-                      height: 60,
+                      height: 75,
                       decoration: BoxDecoration(
                         boxShadow: [
                           BoxShadow(
